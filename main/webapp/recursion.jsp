@@ -116,7 +116,6 @@
         {
             //TODO
             this.value = value;
-            
 			
         }
 
@@ -129,7 +128,7 @@
         public ArrayList<Tree> getChildren()
         {
             //TODO
-            return children;
+            return this.children;
         }
 
         public void add(Tree child)
