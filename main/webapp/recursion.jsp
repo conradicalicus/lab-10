@@ -157,7 +157,13 @@
     {
 
         //TODO
-        return 0;
+        if (height == 1)
+        {
+            return 1;
+        } else
+        {
+            return (branchingFactor*height + nnaryTreeSize(branchingFactor, height-1));   
+        }
     }
 
     /**
