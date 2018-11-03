@@ -32,8 +32,6 @@
          * Here is the base case (ending condition): value == 1.
          * This lets our recursion know when to stop.
          */
-
-        //TODO
         if (!(value > 1))
         {
             return 1;
@@ -114,20 +112,17 @@
 
         public Tree(int value)
         {
-            //TODO
             this.value = value;
 			
         }
 
         public int getValue()
         {
-            //TODO 
             return value;
         }
 
         public ArrayList<Tree> getChildren()
         {
-            //TODO
             return this.children;
         }
 
