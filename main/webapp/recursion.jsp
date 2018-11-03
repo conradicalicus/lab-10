@@ -177,7 +177,12 @@
     public int treeSum(Tree tree)
     {
         //TODO
-        return 0;
+        int summing = tree.getValue();
+        for (int i = 0; i < tree.getChildren().size(); i++)
+        {
+            summing += treeSum(tree.getChildren().get(i));
+        }
+        return summing;
     }
 
     /**
