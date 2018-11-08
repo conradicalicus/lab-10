@@ -69,9 +69,6 @@
      */
     public int fibonacci(int n)
     {
-        int val1 = 0;
-        int val2 = 0;
-        int val3 = 1;
         if (n == 0)
         {
             return 0;
@@ -156,13 +153,12 @@
     public int nnaryTreeSize(int branchingFactor, int height)
     {
 
-        //TODO
         if (height == 1)
         {
             return 1;
         } else
         {
-            return (branchingFactor*height + nnaryTreeSize(branchingFactor, height-1));   
+            return (1 + branchingFactor*nnaryTreeSize(branchingFactor, height-1));   
         }
     }
 
@@ -176,7 +172,6 @@
      */
     public int treeSum(Tree tree)
     {
-        //TODO
         int summing = tree.getValue();
         for (int i = 0; i < tree.getChildren().size(); i++)
         {
